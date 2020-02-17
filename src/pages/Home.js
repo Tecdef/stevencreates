@@ -18,16 +18,17 @@ function Home() {
           </div>
           <div className='columns'>
             <div className='info-icons slide-left'>
-              <i class='fal fa-home-lg'></i> : Saratoga Springs, UT
+              Saratoga Springs, UT <i className='red-font fal fa-home-lg'></i>
               <br />
               <br />
-              <i class='fal fa-user-hard-hat'></i> : Adobe
+              Adobe <i className=' red-font fal fa-user-hard-hat'></i>
               <br />
               <br />
-              <i class='fal fa-phone'></i> : 385-225-2263
+              385-225-2263 <i className=' red-font fal fa-phone'></i>
               <br />
               <br />
-              <i class='fal fa-paper-plane'></i> : steven@stevencreates.tech
+              steven@stevencreates.tech
+              <i className=' red-font fal fa-paper-plane'></i>
             </div>
           </div>
           <div className='columns'></div>

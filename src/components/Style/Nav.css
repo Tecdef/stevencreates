@@ -2,10 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   border-bottom: #ee7175 1px solid;
+  background: #ee7175;
 }
 
 .navs {
-  color: #ee7175;
+  color: #626568;
 }
 
 .my-name {
@@ -28,4 +29,12 @@ div.navs:nth-child(3) {
   padding-left: 2vw;
   height: 36px;
   padding-top: 1vh;
+}
+
+a.contact-link {
+  color: #626568;
+}
+
+a.contact-link:visited {
+  color: #626568;
 }

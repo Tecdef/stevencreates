@@ -1,5 +1,6 @@
-@import url("https://use.typekit.net/bjz4eqa.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap");
+.red-font {
+  color: #ee7175;
+}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -18,7 +19,8 @@ body {
 
 .columns {
   font-weight: 300;
-  margin-top: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 .layout-container {
@@ -72,12 +74,11 @@ a:visited {
 }
 
 .info-icons {
-  text-align: left;
+  text-align: right;
   padding-top: 1vh;
   font-size: 21px;
   font-weight: 300px;
-  border-right: 2px solid #313335;
-  border-bottom: 2px solid #313335;
+  background: linear-gradient(90deg, transparent 0%, black 170%);
   padding-right: 1vw;
   padding-bottom: 1vw;
   border-radius: 5px;
@@ -129,6 +130,10 @@ a:visited {
   box-shadow: inset 0 0 10px;
 }
 
+.small-circle:hover {
+  background: #ee7175;
+}
+
 .indent-box {
   box-shadow: inset 0 0 10px;
   border-radius: 5px;
@@ -145,8 +150,7 @@ div.column-list:nth-child(1) > div:nth-child(1) {
 } */
 
 .skills-text {
-  border-left: 2px solid #313335;
-  border-bottom: 2px solid #313335;
+  background: linear-gradient(90deg, black -170%, transparent 100%);
   padding-left: 1vw;
   padding-bottom: 1vw;
   border-radius: 5px;

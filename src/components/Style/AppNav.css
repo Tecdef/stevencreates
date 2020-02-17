@@ -1,0 +1,23 @@
+.app-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  text-align: center;
+}
+
+.apps {
+  color: #ee7175;
+  font-size: 30px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-bottom: #ee7175 1px solid;
+}
+
+.center-app {
+  border-left: #ee7175 solid 1px;
+  border-right: #ee7175 solid 1px;
+}
+
+.apps:hover {
+  background: #ee7175;
+  color: #626568;
+}

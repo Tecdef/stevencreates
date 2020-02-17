@@ -1,0 +1,31 @@
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  border-bottom: #ee7175 1px solid;
+}
+
+.navs {
+  color: #ee7175;
+}
+
+.my-name {
+  text-align: center;
+  font-size: 36px;
+  padding-top: 1.5vh;
+}
+
+div.navs:nth-child(3) {
+  font-size: 24px;
+  text-align: end;
+}
+
+.contact-me {
+  padding-right: 2vw;
+  padding-top: 1.5vh;
+}
+
+.logo-me {
+  padding-left: 2vw;
+  height: 36px;
+  padding-top: 1vh;
+}

@@ -1,0 +1,3 @@
+Background Color1: #5d6368
+Background Color2: #ee7175
+

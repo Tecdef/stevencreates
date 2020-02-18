@@ -33,7 +33,7 @@ function Stats() {
                 <p className='medium-title'>{medium.title}</p>
                 <p className='publish-date'>Published: {medium.pubDate}</p>
                 <div className='link-container'>
-                  <a class='medium-link' href={medium.link}>
+                  <a className='medium-link' href={medium.link}>
                     See Article
                   </a>
                 </div>
@@ -50,9 +50,29 @@ function Stats() {
           </div>
         </div>
         <div className='column-list'>
-          <div className='columns'>1</div>
-          <div className='columns'>2</div>
-          <div className='columns'>3</div>
+          <div className='columns'>
+            <div className='waka-container'>
+              <img
+                className='waka-image'
+                alt='waka-data'
+                src='https://wakatime.com/share/@tecdef/b9ab3fe2-2049-490b-8a4e-78b501609a3b.png'
+              />
+            </div>
+          </div>
+          <div className='columns'>
+            <img
+              className='waka-image'
+              alt='waka-data'
+              src='https://wakatime.com/share/@tecdef/740bec2e-9861-4352-9822-0528faa8e40c.png'
+            />
+          </div>
+          <div className='columns'>
+            <img
+              className='waka-image'
+              alt='waka-data'
+              src='https://wakatime.com/share/@tecdef/e9b6cbfa-5eae-4614-a426-1b2baef1fb24.png'
+            />
+          </div>
         </div>
         <div className='column-list'>
           <div className='columns'>1</div>

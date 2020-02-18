@@ -7,18 +7,30 @@ function Footer() {
         <div className='footer-options'>
           <a
             className='social-icon'
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://www.linkedin.com/in/steven-hofheins/'>
             <i className='fab fa-linkedin'></i>
           </a>
-          <a href='https://github.com/Tecdef' className='social-icon'>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/Tecdef'
+            className='social-icon'>
             <i className='fab fa-github-square'></i>
           </a>
           <a
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://www.instagram.com/zstorm.tech/'
             className='social-icon'>
             <i className='fab fa-instagram-square'></i>
           </a>
-          <a href='https://medium.com/@steven_creates' className='social-icon'>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://medium.com/@steven_creates'
+            className='social-icon'>
             <i className='fab fa-medium'></i>
           </a>
         </div>

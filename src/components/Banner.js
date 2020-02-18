@@ -22,7 +22,6 @@ function Banner() {
         <div className='circle-image'></div>
         <div className='about-stats'>
           <div>GitHub Repos: {repos.public_repos}</div>
-          <div>Some Stat:</div>
         </div>
       </div>
     </div>

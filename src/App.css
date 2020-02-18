@@ -158,3 +158,17 @@ div.column-list:nth-child(1) > div:nth-child(1) {
   padding-top: 1vh;
   font-size: 21px;
 }
+
+@media screen and (max-width: 640px) {
+  .columns {
+    margin: 0;
+  }
+  .center-app {
+    border-right: none !important;
+    border-left: none !important;
+  }
+  .navs {
+    text-align: center;
+    margin: auto;
+  }
+}

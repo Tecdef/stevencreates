@@ -11,10 +11,10 @@ function AppNav() {
             <i className='fal fa-address-card'></i>
           </Link>
           <Link to='/stats' className='apps center-app'>
-            <i className='fal fa-project-diagram'></i>
+            <i class='fal fa-analytics'></i>
           </Link>
-          <Link to='/social' className='apps'>
-            <i className='fal fa-users'></i>
+          <Link to='/mywork' className='apps'>
+            <i className='fal fa-project-diagram'></i>
           </Link>
         </div>
       </div>

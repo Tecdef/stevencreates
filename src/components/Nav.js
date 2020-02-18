@@ -12,9 +12,7 @@ function Nav() {
         </div>
         <div className='navs my-name'>Steven Hofheins</div>
         <div className='navs contact-me'>
-          <Link className='contact-link' to='/contact'>
-            Contact
-          </Link>
+          <Link className='contact-link' to='/contact'></Link>
         </div>
       </div>
     </div>

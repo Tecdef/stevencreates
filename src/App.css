@@ -171,4 +171,7 @@ div.column-list:nth-child(1) > div:nth-child(1) {
     text-align: center;
     margin: auto;
   }
+  .commit-img {
+    max-width: 93vw;
+  }
 }

@@ -1,0 +1,63 @@
+.medium-container {
+}
+
+.medium-post {
+  text-align: center;
+  border: white solid 1px;
+  padding: 2vh;
+  margin-top: 1vh;
+}
+
+.medium-title {
+  font-size: 21px;
+  color: #ee7175;
+}
+
+.link-container {
+  background: #ee7175;
+  border: solid 1px #ee7175;
+  color: #626568;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 1vh;
+}
+
+.link-container:hover {
+  background-color: #626568;
+  color: #ee7175;
+}
+
+.link-container.medium-link:hover {
+  color: #ee7175;
+}
+
+a.medium-link:hover {
+  color: #ee7175;
+}
+
+a.medium-link:visited:hover {
+  color: #ee7175;
+}
+
+a.medium-link {
+  color: #626568;
+}
+
+a.medium-link:visited {
+  color: #626568;
+}
+
+.stat-titles {
+  font-size: 28px;
+  text-align: center;
+}
+
+.publish-date {
+  font-size: 12px;
+  margin-top: 1vh;
+}
+
+.commit-img {
+  margin-top: 1vh;
+}

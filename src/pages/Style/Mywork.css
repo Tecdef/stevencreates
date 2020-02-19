@@ -1,0 +1,26 @@
+.bankan-image {
+  background-image: url(/static/media/bankan.91ece007.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25vh;
+  background-position: center;
+}
+
+.current-repos {
+  border: solid 1px #ee7175;
+  padding: 1%;
+  height: 25vh;
+  overflow: scroll;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.repo-name {
+  font-size: 20px;
+}
+
+.repo-container {
+  border: solid 1px white;
+  padding: 1vh;
+  margin: 1vh;
+}

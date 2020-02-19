@@ -75,9 +75,9 @@ function Stats() {
           </div>
         </div>
         <div className='column-list'>
-          <div className='columns'>1</div>
-          <div className='columns'>2</div>
-          <div className='columns'>3</div>
+          <div className='columns'></div>
+          <div className='columns'></div>
+          <div className='columns'></div>
         </div>
       </div>
       <Footer />

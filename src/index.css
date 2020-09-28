@@ -43,6 +43,11 @@ code {
   grid-row-end: 1;
 }
 
+.first-column-second-row {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

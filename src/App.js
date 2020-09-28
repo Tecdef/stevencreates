@@ -1,12 +1,17 @@
 import React from "react";
+import StevenCreates from "./Assets/StevenCreates.JPG";
 import { MediumFeed } from "./components/MediumFeed";
 
 function App() {
   return (
     <div className='app-container'>
       <div className='first-column'>
-        <div className='first-column-row'>1st Row</div>
-        <div className='first-column-second-row'>2nd Row</div>
+        <div className='first-column-row'>
+          <img className='image-contain' src={StevenCreates} alt='' />
+        </div>
+        <div className='first-column-second-row'>
+          <div className='name-class'>Steven Hofheins</div>
+        </div>
       </div>
       <div className='second-column'>
         <MediumFeed />

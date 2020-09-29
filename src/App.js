@@ -5,21 +5,11 @@ import { QuickInfo } from "./components/QuickInfo";
 
 function App() {
   return (
-    <div className='app-container'>
-      <div className='first-column'>
-        <div className='first-column-row'>
-          <img className='image-contain' src={StevenCreates} alt='' />
-        </div>
-        <div className='first-column-second-row'>
-          <QuickInfo />
-        </div>
+    <div className='app-container grid'>
+      <div className='image-section'>
+        {/* <img className='image-contain' src={StevenCreates} alt='' /> */}
       </div>
-      <div className='second-column'>
-        <MediumFeed />
-      </div>
-      <div className='third-column'>
-        <MediumFeed />
-      </div>
+      <div className='quick-info'></div>
     </div>
   );
 }

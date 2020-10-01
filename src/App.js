@@ -1,16 +1,21 @@
 import React from "react";
+import styled from "styled-components";
 import StevenCreates from "./Assets/StevenCreates.JPG";
 import { MediumFeed } from "./components/MediumFeed";
 import { QuickInfo } from "./components/QuickInfo";
 
+const GridStyles = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-column-gap: 2em;
+`;
+
 function App() {
   return (
-    <div className='app-container grid'>
-      <div className='image-section'>
-        {/* <img className='image-contain' src={StevenCreates} alt='' /> */}
-      </div>
+    <GridStyles>
+      <div></div>
       <div className='quick-info'></div>
-    </div>
+    </GridStyles>
   );
 }
 

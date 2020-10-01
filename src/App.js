@@ -8,12 +8,14 @@ const GridStyles = styled.div`
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   grid-column-gap: 2em;
+  max-width: 1000px;
+  background: gray;
 `;
 
 function App() {
   return (
     <GridStyles>
-      <div></div>
+      <div> test</div>
       <div className='quick-info'></div>
     </GridStyles>
   );

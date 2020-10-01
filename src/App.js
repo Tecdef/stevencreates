@@ -17,20 +17,24 @@ const GridStyles = styled.div`
     --background: pink;
   }
   img {
-    width: 400px;
+    max-width: 400px;
+  }
+  @media (max-width: 1100px) {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
   }
 `;
 
 function App() {
   return (
     <GridStyles>
-      <div>
+      <div className='image-container'>
         <img src={StevenCreates} alt='Steven Hofheins' />
         <div>
           <QuickInfo />
         </div>
       </div>
-      <div>2 </div>
+      <div>2</div>
       <div>3</div>
     </GridStyles>
   );

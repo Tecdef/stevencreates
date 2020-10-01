@@ -6,8 +6,8 @@ export const QuickInfo = () => {
     margin-top: -1%;
     z-index: 89;
     padding: 1rem 1.25rem 1rem 1.25rem;
-    background: #32383d;
-    color: white;
+    background: #f2f2f2;
+    color: #d99a4e;
     display: flex;
     justify-content: center;
     .name-class {
@@ -35,13 +35,13 @@ export const QuickInfo = () => {
     }
     .E {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(6deg);
       }
       font-size: 24px;
     }
     .V {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(-9deg);
       }
       font-size: 24px;
     }
@@ -53,20 +53,20 @@ export const QuickInfo = () => {
     }
     .N {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(-8deg);
       }
       font-size: 24px;
       padding-right: 1rem;
     }
     .H {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(8deg);
       }
       font-size: 24px;
     }
     .O {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(-8deg);
       }
       font-size: 24px;
     }
@@ -78,7 +78,7 @@ export const QuickInfo = () => {
     }
     .E {
       &:hover {
-        transform: rotate(-6deg);
+        transform: rotate(-3deg);
       }
       font-size: 24px;
     }
@@ -105,6 +105,15 @@ export const QuickInfo = () => {
         transform: rotate(-6deg);
       }
       font-size: 24px;
+    }
+    @media (max-width: 1100px) {
+      .name-class {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 800;
+        padding-bottom: 1rem;
+        color: #d99a4e;
+      }
     }
   `;
 

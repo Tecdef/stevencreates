@@ -8,6 +8,8 @@ export const QuickInfo = () => {
     padding: 1rem 1.25rem 1rem 1.25rem;
     background: #32383d;
     color: white;
+    display: flex;
+    justify-content: center;
     .name-class {
       font-size: 24px;
       text-align: center;
@@ -22,20 +24,87 @@ export const QuickInfo = () => {
       color: #1bc6b4;
       font-size: 18px;
     }
-    .place {
-      &:hover {
-        transform: rotate(6deg);
-      }
+    .S {
+      font-size: 24px;
     }
-    .job {
+    .T {
       &:hover {
         transform: rotate(-6deg);
       }
+      font-size: 24px;
     }
-    .role {
+    .E {
       &:hover {
-        transform: rotate(10deg);
+        transform: rotate(-6deg);
       }
+      font-size: 24px;
+    }
+    .V {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .e {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .N {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+      padding-right: 1rem;
+    }
+    .H {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .O {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .F {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .E {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .I {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .s {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .ei {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
+    }
+    .n {
+      &:hover {
+        transform: rotate(-6deg);
+      }
+      font-size: 24px;
     }
   `;
 
@@ -49,18 +118,21 @@ export const QuickInfo = () => {
 
   return (
     <QuickInfoStyles>
-      <div className='name-class'>Steven Hofheins</div>
-      <InfoGridStyles>
-        <div className='about-item'>
-          <span className='item-desc place'>Utah</span>
-        </div>
-        <div className='about-item'>
-          <span className='item-desc job'>Adobe</span>
-        </div>
-        <div className='about-item'>
-          <span className='item-desc role'>Software Developer</span>
-        </div>
-      </InfoGridStyles>
+      {/* <div className='name-class'>Steven Hofheins</div> */}
+      <div className='S'>S</div>
+      <div className='T'>T</div>
+      <div className='E'>E</div>
+      <div className='V'>V</div>
+      <div className='e'>E</div>
+      <div className='N'>N</div>
+      <div className='H'>H</div>
+      <div className='O'>O</div>
+      <div className='F'>F</div>
+      <div className='H'>H</div>
+      <div className='ei'>E</div>
+      <div className='I'>I</div>
+      <div className='n'>N</div>
+      <div className='s'>S</div>
     </QuickInfoStyles>
   );
 };

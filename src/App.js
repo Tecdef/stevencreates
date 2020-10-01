@@ -5,6 +5,8 @@ import { MediumFeed } from "./components/MediumFeed";
 import { QuickInfo } from "./components/QuickInfo";
 
 const GridStyles = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+  font-family: "Lato", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   grid-column-gap: 2em;
@@ -13,9 +15,6 @@ const GridStyles = styled.div`
   margin: 4rem auto 4rem auto;
   div {
     --background: pink;
-    &:nth-child(1) {
-      background: blue;
-    }
   }
   img {
     width: 400px;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import StevenCreates from "./Assets/StevenCreates.JPG";
+import CardFlip from "./components/CardFlip";
 import { MediumFeed } from "./components/MediumFeed";
 import { QuickInfo } from "./components/QuickInfo";
 
@@ -9,7 +10,6 @@ const GridStyles = styled.div`
   font-family: "Lato", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  grid-column-gap: 2em;
   max-width: 1600px;
   background: gray;
   margin: 4rem auto 4rem auto;
@@ -34,7 +34,9 @@ function App() {
           <QuickInfo />
         </div>
       </div>
-      <div>2</div>
+      <div>
+        <CardFlip />
+      </div>
       <div>3</div>
     </GridStyles>
   );

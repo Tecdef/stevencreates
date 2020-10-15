@@ -4,8 +4,8 @@ const parser = new Parser();
 
 export const MediumFeed = () => {
   const [data, setData] = React.useState();
-  const [error, setError] = React.useState(false);
-  const [loading, setLoading] = React.useState(true);
+  const [, setError] = React.useState(false);
+  const [, setLoading] = React.useState(true);
   const feed_url = `https://medium.com/feed/@steven_creates`;
   const CORS_PROXY = `https://cors-anywhere.herokuapp.com/`;
 

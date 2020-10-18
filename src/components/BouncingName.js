@@ -8,6 +8,7 @@ const BouncingName = ({
   startPoint = 10,
   endPoint = -5,
   color,
+  delay = 0,
 }) => {
   console.log(color);
   return (
@@ -21,7 +22,12 @@ const BouncingName = ({
         animate={{
           y: [startPoint, endPoint, startPoint, endPoint, startPoint],
         }}
-        transition={{ repeat: Infinity, duration: 6, type: "spring" }}>
+        transition={{
+          repeat: Infinity,
+          duration: 6,
+          type: "spring",
+          delay: delay,
+        }}>
         {letter}
       </LetterStyling>
       ;

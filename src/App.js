@@ -24,14 +24,121 @@ const GridStyles = styled.div`
   }
 `;
 
-const Name = styled.span`
-  color: #ffbbdd;
-`;
-
 function App() {
   return (
     <>
-      <BouncingName letter='S' size='36' position={10} color='#FFBBDD' />
+      <BouncingName
+        letter='S'
+        size='36'
+        delay={1}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='T'
+        size='36'
+        delay={0}
+        startPoint={5}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='E'
+        size='36'
+        delay={0.2}
+        startPoint={15}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='V'
+        size='36'
+        delay={0.1}
+        startPoint={6}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='E'
+        size='36'
+        delay={1}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='N'
+        size='36'
+        delay={0.1}
+        startPoint={9}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='H'
+        size='36'
+        delay={0}
+        startPoint={3}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='O'
+        size='36'
+        delay={0.8}
+        startPoint={8}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='F'
+        size='36'
+        delay={0.1}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='H'
+        size='36'
+        delay={0}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='E'
+        size='36'
+        delay={0.3}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='I'
+        size='36'
+        delay={0.4}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='N'
+        size='36'
+        delay={0}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
+      <BouncingName
+        letter='S'
+        size='36'
+        delay={0.2}
+        startPoint={10}
+        // endPoint={}
+        color='#FFBBDD'
+      />
       <GridStyles>
         <div className='image-container'>
           <div></div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
+import BouncingName from "./components/BouncingName";
 import { QuickInfo } from "./components/QuickInfo";
 
 const GridStyles = styled.div`
@@ -30,7 +31,7 @@ const Name = styled.span`
 function App() {
   return (
     <>
-      <QuickInfo />
+      <BouncingName letter='S' size='36' position={10} color='#FFBBDD' />
       <GridStyles>
         <div className='image-container'>
           <div></div>

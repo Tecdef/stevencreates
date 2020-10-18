@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
+import { QuickInfo } from "./components/QuickInfo";
 
 const GridStyles = styled.div`
   font-family: "DM Sans", sans-serif;
@@ -30,7 +31,7 @@ function App() {
   return (
     <GridStyles>
       <div className='image-container'>
-        <Name>Steven Hofheins</Name>
+        <QuickInfo />
         <div></div>
       </div>
       <div></div>

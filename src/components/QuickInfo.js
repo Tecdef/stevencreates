@@ -47,7 +47,12 @@ export const QuickInfo = () => {
   return (
     <AnimatePresence>
       {/* <AnimateTitle className='name-class'>Steven Hofheins</AnimateTitle> */}
-      <AnimateTitle drag className='s1'>
+      <AnimateTitle
+        drag
+        // initial={{ y: 0, opacity: 0.5 }}
+        animate={{ y: [10, -5, 10, -5, 10] }}
+        transition={{ repeat: Infinity, duration: 6, type: "spring" }}
+        className='s1'>
         S
       </AnimateTitle>
       <AnimateTitle drag className='t1'>

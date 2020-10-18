@@ -29,14 +29,16 @@ const Name = styled.span`
 
 function App() {
   return (
-    <GridStyles>
-      <div className='image-container'>
-        <QuickInfo />
+    <>
+      <QuickInfo />
+      <GridStyles>
+        <div className='image-container'>
+          <div></div>
+        </div>
         <div></div>
-      </div>
-      <div></div>
-      <div>3</div>
-    </GridStyles>
+        <div>3</div>
+      </GridStyles>
+    </>
   );
 }
 

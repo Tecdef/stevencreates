@@ -24,121 +24,32 @@ const GridStyles = styled.div`
   }
 `;
 
+let COLORS = ["#BB55FF", "#FFBBDD", "#FFFFFF"];
+
+const NAME = [
+  {
+    letter: "S",
+    size: "36",
+    delay: 1,
+    startPoint: Math.floor(Math.random() * 10),
+    // endPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+];
+
 function App() {
   return (
     <>
-      <BouncingName
-        letter='S'
-        size='36'
-        delay={1}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='T'
-        size='36'
-        delay={0}
-        startPoint={5}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='E'
-        size='36'
-        delay={0.2}
-        startPoint={15}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='V'
-        size='36'
-        delay={0.1}
-        startPoint={6}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='E'
-        size='36'
-        delay={1}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='N'
-        size='36'
-        delay={0.1}
-        startPoint={9}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='H'
-        size='36'
-        delay={0}
-        startPoint={3}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='O'
-        size='36'
-        delay={0.8}
-        startPoint={8}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='F'
-        size='36'
-        delay={0.1}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='H'
-        size='36'
-        delay={0}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='E'
-        size='36'
-        delay={0.3}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='I'
-        size='36'
-        delay={0.4}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='N'
-        size='36'
-        delay={0}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
-      <BouncingName
-        letter='S'
-        size='36'
-        delay={0.2}
-        startPoint={10}
-        // endPoint={}
-        color='#FFBBDD'
-      />
+      {NAME.map((name) => (
+        <BouncingName
+          letter={name.letter}
+          size={name.size}
+          delay={name.delay}
+          startPoint={name.startPoint}
+          // endPoint={}
+          color={name.color}
+        />
+      ))}
       <GridStyles>
         <div className='image-container'>
           <div></div>

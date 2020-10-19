@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import BouncingName from "./components/BouncingName";
-import NAME from "./components/Name";
+import BouncingName from "../components/BouncingName";
+import NAME from "../components/Name";
 
 const GridStyles = styled.div`
   display: grid;

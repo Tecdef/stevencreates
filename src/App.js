@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import Github from "./Assets/Github";
+import Javascript from "./Assets/Javscript";
 import LinkedIN from "./Assets/LinkedIN";
 import BouncingName from "./components/BouncingName";
 import NAME from "./components/Name";
@@ -12,9 +13,6 @@ const GridStyles = styled.div`
 `;
 
 function App() {
-  const [about, setAbout] = React.useState(false);
-  const [location, setLocation] = React.useState(false);
-  const [specialize, setSpecialize] = React.useState(false);
   return (
     <>
       <GridStyles>
@@ -136,8 +134,9 @@ function App() {
                 type: "spring",
                 stiffness: 260,
                 damping: 10,
-              }}
-            />
+              }}>
+              <Javascript />
+            </motion.div>
             <motion.div
               style={{
                 height: 60,

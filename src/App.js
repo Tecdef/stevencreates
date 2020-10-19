@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import Github from "./Assets/Github";
+import LinkedIN from "./Assets/LinkedIN";
 import BouncingName from "./components/BouncingName";
 import NAME from "./components/Name";
 
@@ -79,8 +80,9 @@ function App() {
                 type: "spring",
                 stiffness: 260,
                 damping: 10,
-              }}
-            />
+              }}>
+              <LinkedIN />
+            </motion.div>
             <motion.div
               style={{
                 height: 60,

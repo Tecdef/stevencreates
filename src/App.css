@@ -5,3 +5,11 @@ body {
   background: rgb(21, 21, 21);
   font-family: "Unica One", cursive;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}

@@ -15,6 +15,7 @@ const BouncingName = ({
     <AnimatePresence>
       <LetterStyling
         style={{
+          fontFamily: "Bungee Shade, cursive",
           color: color,
           fontSize: `${size}px`,
         }}

@@ -1,11 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import "./App.css";
 import BouncingName from "./components/BouncingName";
-import { QuickInfo } from "./components/QuickInfo";
 
 const GridStyles = styled.div`
-  font-family: "DM Sans", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   border-radius: 4px;
@@ -24,7 +22,7 @@ const GridStyles = styled.div`
   }
 `;
 
-let COLORS = ["#BB55FF", "#FFBBDD", "#FFFFFF"];
+let COLORS = ["#487E80", "#E6D2D1", "#3E496C"];
 
 const NAME = [
   {
@@ -123,7 +121,25 @@ const NAME = [
 function App() {
   return (
     <>
-      <div style={{ marginTop: "2rem", marginLeft: "2rem" }}>
+      <div style={{ marginTop: "3rem", marginLeft: "3rem" }}>
+        <motion.div
+          style={{
+            height: 30,
+            width: 30,
+            borderRadius: 5,
+            background: "white",
+            display: "inline-block",
+            marginRight: "1.5rem",
+          }}
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 10,
+          }}
+        />
+
         {NAME.map((name) => (
           <BouncingName
             letter={name.letter}
@@ -134,6 +150,24 @@ function App() {
             color={name.color}
           />
         ))}
+        <motion.div
+          onHoverStart={{ scale: 1.2 }}
+          style={{
+            height: 30,
+            width: 30,
+            borderRadius: 5,
+            background: "white",
+            display: "inline-block",
+            marginLeft: "1.5rem",
+          }}
+          initial={{ scale: 0 }}
+          animate={{ rotate: -360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 10,
+          }}
+        />
       </div>
       <GridStyles>
         <div className='image-container'>

@@ -13,7 +13,6 @@ export default function NineSquare() {
         <a target='_none' href='https://github.com/StevenCreates'>
           <TopRowIcons
             href='https://github.com/StevenCreates'
-            style={{ background: "#E6D2D1" }}
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
             transition={{
@@ -25,6 +24,7 @@ export default function NineSquare() {
           </TopRowIcons>
         </a>
         <TopRowIcons
+          style={{ background: "#E6D2D1" }}
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -37,7 +37,6 @@ export default function NineSquare() {
           <TopRowIcons
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
-            style={{ background: "#76806A" }}
             transition={{
               type: "spring",
               stiffness: 260,
@@ -49,6 +48,7 @@ export default function NineSquare() {
         <TopRowIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
+          style={{ background: "#76806A" }}
           transition={{
             type: "spring",
             stiffness: 260,
@@ -60,6 +60,7 @@ export default function NineSquare() {
         <BottomRowsIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
+          style={{ background: "#283845" }}
           transition={{
             type: "spring",
             stiffness: 260,
@@ -68,7 +69,6 @@ export default function NineSquare() {
         />
         <BottomRowsIcons
           initial={{ scale: 0 }}
-          style={{ background: "#3E496C" }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
             type: "spring",
@@ -79,6 +79,7 @@ export default function NineSquare() {
         </BottomRowsIcons>
         <BottomRowsIcons
           initial={{ scale: 0 }}
+          style={{ background: "#3E496C" }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
             type: "spring",
@@ -92,7 +93,6 @@ export default function NineSquare() {
           <a href='mailto:steven@stevencreates.tech'>
             <BottomRowsIcons
               initial={{ scale: 1, rotate: 360 }}
-              style={{ background: "#487E80" }}
               animate={{
                 rotate: ["0deg", "6deg", "0deg", "-6deg", "0deg"],
                 scale: 1,
@@ -108,6 +108,7 @@ export default function NineSquare() {
           </a>
         </AnimatePresence>
         <BottomRowsIcons
+          style={{ background: "#487E80" }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
             repeate: Infinity,

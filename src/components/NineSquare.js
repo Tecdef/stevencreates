@@ -127,6 +127,12 @@ const BottomRowsIcons = styled(motion.div)`
   border-radius: 5px;
   margin-top: 1.5rem;
   margin-right: 1.5rem;
+  @media (max-width: 400px) {
+    min-height: 45px;
+    max-height: 45px;
+    min-width: 45px;
+    max-width: 45px;
+  }
 `;
 
 const TopRowIcons = styled(motion.div)`
@@ -138,4 +144,10 @@ const TopRowIcons = styled(motion.div)`
   background: white;
   border-radius: 5px;
   margin-right: 1.5rem;
+  @media (max-width: 400px) {
+    min-height: 45px;
+    max-height: 45px;
+    min-width: 45px;
+    max-width: 45px;
+  }
 `;

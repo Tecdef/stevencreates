@@ -43,6 +43,9 @@ const FrontPageStyles = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 500px) {
+    margin-left: 2rem;
+  }
 `;
 
 const FirstName = styled.span`
@@ -80,10 +83,13 @@ const SecondGrid = styled.div`
   padding-top: 2rem;
   padding-left: 8rem;
   @media (max-width: 1300px) {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
-    padding-left: 1rem;
+    padding-left: 0;
+  }
+  @media (max-width: 500px) {
+    margin-left: 2rem;
   }
 `;

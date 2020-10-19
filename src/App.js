@@ -29,10 +29,93 @@ let COLORS = ["#BB55FF", "#FFBBDD", "#FFFFFF"];
 const NAME = [
   {
     letter: "S",
-    size: "36",
-    delay: 1,
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
     startPoint: Math.floor(Math.random() * 10),
-    // endPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "T",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "E",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "V",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "E",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "N",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "C",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "R",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "E",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "A",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "T",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "E",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+  },
+  {
+    letter: "S",
+    size: "48",
+    delay: Math.floor(Math.random() * 1.5),
+    startPoint: Math.floor(Math.random() * 10),
     color: COLORS[Math.floor(Math.random() * COLORS.length)],
   },
 ];
@@ -40,16 +123,18 @@ const NAME = [
 function App() {
   return (
     <>
-      {NAME.map((name) => (
-        <BouncingName
-          letter={name.letter}
-          size={name.size}
-          delay={name.delay}
-          startPoint={name.startPoint}
-          // endPoint={}
-          color={name.color}
-        />
-      ))}
+      <div style={{ marginTop: "2rem", marginLeft: "2rem" }}>
+        {NAME.map((name) => (
+          <BouncingName
+            letter={name.letter}
+            size={name.size}
+            delay={name.delay}
+            startPoint={name.startPoint}
+            // endPoint={}
+            color={name.color}
+          />
+        ))}
+      </div>
       <GridStyles>
         <div className='image-container'>
           <div></div>

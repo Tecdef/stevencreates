@@ -19,6 +19,8 @@ const BouncingName = ({
           fontSize: `${size}px`,
         }}
         drag
+        layout
+        dragElastic={0.2}
         animate={{
           y: [startPoint, endPoint, startPoint, endPoint, startPoint],
         }}
@@ -37,8 +39,8 @@ const BouncingName = ({
 
 const LetterStyling = styled(motion.div)`
   font-size: 36px;
-  padding: 1rem;
   display: inline-block;
+  padding-right: 0.25rem;
 `;
 
 export default BouncingName;

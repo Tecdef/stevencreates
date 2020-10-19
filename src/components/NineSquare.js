@@ -4,23 +4,16 @@ import Github from "../Assets/Github";
 import Javascript from "../Assets/Javscript";
 import LinkedIN from "../Assets/LinkedIN";
 import Mail from "../Assets/Mail";
+import styled from "styled-components";
 
 export default function NineSquare() {
   return (
     <div>
       <div style={{ display: "block" }}>
         <a target='_none' href='https://github.com/StevenCreates'>
-          <motion.div
+          <TopRowIcons
             type='button'
             href='https://github.com/StevenCreates'
-            style={{
-              height: 60,
-              width: 60,
-              borderRadius: 5,
-              background: "white",
-              display: "inline-block",
-              marginRight: "1.5rem",
-            }}
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
             transition={{
@@ -29,17 +22,9 @@ export default function NineSquare() {
               damping: 25,
             }}>
             <Github />
-          </motion.div>
+          </TopRowIcons>
         </a>
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-          }}
+        <TopRowIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -49,15 +34,7 @@ export default function NineSquare() {
           }}
         />
         <a target='_none' href='https://www.linkedin.com/in/steven-hofheins/'>
-          <motion.div
-            style={{
-              height: 60,
-              width: 60,
-              borderRadius: 5,
-              background: "white",
-              display: "inline-block",
-              marginRight: "1.5rem",
-            }}
+          <TopRowIcons
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
             transition={{
@@ -66,17 +43,9 @@ export default function NineSquare() {
               damping: 25,
             }}>
             <LinkedIN />
-          </motion.div>
+          </TopRowIcons>
         </a>
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-          }}
+        <TopRowIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -87,16 +56,7 @@ export default function NineSquare() {
         />
       </div>
       <div style={{ display: "block" }}>
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-            marginTop: "1.5rem",
-          }}
+        <BottomRowsIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -105,16 +65,7 @@ export default function NineSquare() {
             damping: 25,
           }}
         />
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-            marginTop: "1.5rem",
-          }}
+        <BottomRowsIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -123,17 +74,8 @@ export default function NineSquare() {
             damping: 25,
           }}>
           <Javascript />
-        </motion.div>
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-            marginTop: "1.5rem",
-          }}
+        </BottomRowsIcons>
+        <BottomRowsIcons
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -146,16 +88,7 @@ export default function NineSquare() {
       <div style={{ display: "block" }}>
         <AnimatePresence>
           <a href='mailto:steven@stevencreates.tech'>
-            <motion.div
-              style={{
-                height: 60,
-                width: 60,
-                borderRadius: 5,
-                background: "white",
-                display: "inline-block",
-                marginRight: "1.5rem",
-                marginTop: "1.5rem",
-              }}
+            <BottomRowsIcons
               initial={{ scale: 1, rotate: 360 }}
               animate={{
                 rotate: ["0deg", "6deg", "0deg", "-6deg", "0deg"],
@@ -168,29 +101,41 @@ export default function NineSquare() {
                 delay: 0,
               }}>
               <Mail />
-            </motion.div>
+            </BottomRowsIcons>
           </a>
         </AnimatePresence>
-        <motion.div
-          style={{
-            height: 60,
-            width: 60,
-            borderRadius: 5,
-            background: "white",
-            display: "inline-block",
-            marginRight: "1.5rem",
-            marginTop: "1.5rem",
-          }}
-          // initial={{ scale: 0 }}
+        <BottomRowsIcons
           animate={{ rotate: 360, scale: 1 }}
           transition={{
             repeate: Infinity,
             type: "spring",
             stiffness: 260,
             damping: 25,
-          }}
-        />
+          }}></BottomRowsIcons>
       </div>
     </div>
   );
 }
+
+const BottomRowsIcons = styled(motion.div)`
+  min-height: 60px;
+  max-height: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+`;
+
+const TopRowIcons = styled(motion.div)`
+  min-height: 60px;
+  max-height: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+`;

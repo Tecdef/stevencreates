@@ -5,6 +5,7 @@ import Javascript from "../Assets/Javscript";
 import LinkedIN from "../Assets/LinkedIN";
 import Mail from "../Assets/Mail";
 import styled from "styled-components";
+import Medium from "../Assets/Medium";
 
 export default function NineSquare() {
   return (
@@ -69,17 +70,22 @@ export default function NineSquare() {
             damping: 25,
           }}
         />
-        <BottomRowsIcons
-          whileHover={{ scale: 1.1 }}
-          initial={{ scale: 0 }}
-          animate={{ rotate: 360, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 25,
-          }}>
-          <Javascript />
-        </BottomRowsIcons>
+        <a
+          target='_none'
+          href='https://medium.com/@steven_creates
+        '>
+          <BottomRowsIcons
+            whileHover={{ scale: 1.1 }}
+            initial={{ scale: 0 }}
+            animate={{ rotate: 360, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 25,
+            }}>
+            <Medium />
+          </BottomRowsIcons>
+        </a>
         <BottomRowsIcons
           initial={{ scale: 0 }}
           style={{ background: "#3E496C" }}

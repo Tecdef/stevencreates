@@ -12,6 +12,7 @@ export default function NineSquare() {
       <div style={{ display: "block" }}>
         <a target='_none' href='https://github.com/StevenCreates'>
           <TopRowIcons
+            whileHover={{ scale: 1.1 }}
             href='https://github.com/StevenCreates'
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
@@ -35,6 +36,7 @@ export default function NineSquare() {
         />
         <a target='_none' href='https://www.linkedin.com/in/steven-hofheins/'>
           <TopRowIcons
+            whileHover={{ scale: 1.1 }}
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
             transition={{
@@ -68,6 +70,7 @@ export default function NineSquare() {
           }}
         />
         <BottomRowsIcons
+          whileHover={{ scale: 1.1 }}
           initial={{ scale: 0 }}
           animate={{ rotate: 360, scale: 1 }}
           transition={{
@@ -93,6 +96,7 @@ export default function NineSquare() {
           <a href='mailto:steven@stevencreates.tech'>
             <BottomRowsIcons
               initial={{ scale: 1, rotate: 360 }}
+              whileHover={{ scale: 1.1 }}
               animate={{
                 rotate: ["0deg", "6deg", "0deg", "-6deg", "0deg"],
                 scale: 1,

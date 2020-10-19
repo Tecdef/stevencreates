@@ -96,7 +96,6 @@ export default function NineSquare() {
           <a href='mailto:steven@stevencreates.tech'>
             <BottomRowsIcons
               initial={{ scale: 1, rotate: 360 }}
-              whileHover={{ scale: 1.1 }}
               animate={{
                 rotate: ["0deg", "6deg", "0deg", "-6deg", "0deg"],
                 scale: 1,

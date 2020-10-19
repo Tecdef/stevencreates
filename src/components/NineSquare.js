@@ -12,7 +12,6 @@ export default function NineSquare() {
       <div style={{ display: "block" }}>
         <a target='_none' href='https://github.com/StevenCreates'>
           <TopRowIcons
-            type='button'
             href='https://github.com/StevenCreates'
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}

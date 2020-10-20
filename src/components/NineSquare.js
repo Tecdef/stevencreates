@@ -1,7 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Github from "../Assets/Github";
-import Javascript from "../Assets/Javscript";
 import LinkedIN from "../Assets/LinkedIN";
 import Mail from "../Assets/Mail";
 import styled from "styled-components";

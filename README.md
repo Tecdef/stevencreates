@@ -1,11 +1,10 @@
-# stevencreates
+# stevencreates.tech
 
-### Under Maintenence
+## Personal Site
+- url: stevencreates.tech
 
-### Under Maintenence
-
-### Under Maintenence
-
-### Under Maintenence
-
-### Under Maintenence
+### Uses
+- React
+- Styled Components
+- Framer Motion
+- Netlify

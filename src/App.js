@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
@@ -16,13 +17,23 @@ function App() {
     <>
       <GridStyles>
         <FrontPageStyles>
-          <div>
-            <FirstName>Steven</FirstName>
-            <SecondName className='background-clip'>Creates</SecondName>
-          </div>
-          <div>
-            <AboutMe>Software Engineer</AboutMe>
-          </div>
+          <AnimatePresence layout>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}>
+              <FirstName>Steven</FirstName>
+              <SecondName className='background-clip'>Creates</SecondName>
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence layout>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}>
+              <AboutMe>Software Engineer</AboutMe>
+            </motion.div>
+          </AnimatePresence>
         </FrontPageStyles>
         <SecondGrid>
           <NineSquare />

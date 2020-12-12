@@ -1,10 +1,11 @@
-# stevencreates.tech
+# Visit: stevencreates.tech
 
 ## Personal Site
 - url: stevencreates.tech
 
-### Uses
+## Uses
 - React
+- JavaScript
 - Styled Components
 - Framer Motion
 - Netlify
